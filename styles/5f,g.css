@@ -1,0 +1,49 @@
+p {
+    font-family: Arial;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .money {
+    font-size: 30px;
+  }
+
+  .dolar {
+    font-size: 20px;
+    color: rgb(132, 132, 132);
+  }
+
+  .income {
+    color: green;
+  }
+
+  .despues {
+    font-size: 15px;
+    color: rgb(132, 132, 132);
+  }
+
+  .loss {
+    color: red;
+    margin-bottom: 12px;
+  }
+
+  .borde {
+    margin-top: 25px;
+    font-weight: bold;
+  }
+
+  .unahora {
+    font-weight: lighter;
+    color: rgb(102, 101, 101);
+    margin-bottom: 25px;
+    margin-top: 5px;
+  }
+
+  .desc {
+    margin-right: 200px;
+    margin-bottom: 25px;
+  }
+
+  .azulito {
+    color: rgb(54, 138, 255);
+  }

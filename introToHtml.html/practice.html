@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Practice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <style>
+      .p {
+        font-family: Arial;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        column-gap: 20px;
+      }
+
+      .profile {
+        width: 200px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        vertical-align: top;
+        margin-right: 15px;
+      }
+
+      .elgato-profile {
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+        margin-bottom: 12px;
+      }
+
+      .gato-name {
+        font-size: 18px;
+        font-weight: bold;
+        margin-left: 10px;
+        margin-bottom: 5px;
+        margin-top: 2px;
+      }
+
+      .mutual-friends-row {
+        display: grid;
+        grid-template-columns: 55px 1fr;
+        align-items: center;
+        margin-left: 1px;
+        margin-bottom: 10px;
+      }
+
+      .profile-picture {
+        height: 30px;
+        width: 30px;
+        margin-left: 15px;
+        margin-right: 3px;
+        object-fit: cover;
+        border-radius: 25px;
+      }
+
+      .mutual-friends {
+        font-size: 16px;
+        color: gray;
+      }
+
+      .add-friend-button {
+        background-color: rgb(63, 95, 221);
+        color: white;
+        font-size: 16px;
+        border-style: none;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 4px;
+        margin-left: 18px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .add-friend-button:hover {
+        background-color: blue;
+      }
+
+      .add-friend-button:active {
+        opacity: 0.5;
+      }
+
+      .elgato-profile2 {
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+        object-position: right;
+        margin-bottom: 12px;
+      }
+    </style>
+
+    <p>10e.</p>
+
+    <div class="grid">
+      <div class="profile">
+        <img class="elgato-profile" src="cutecat.jpg" alt="profile pic" />
+        <p class="gato-name">Olivia</p>
+        <div class="mutual-friends-row">
+          <img class="profile-picture" src="elgatom.png" />
+          <p class="mutual-friends">2 mutual friends</p>
+        </div>
+        <button class="add-friend-button">Add Friend</button>
+      </div>
+
+      <div class="profile">
+        <img class="elgato-profile2" src="gato1.png" alt="profile pic" />
+        <p class="gato-name">Sebastian</p>
+        <div class="mutual-friends-row">
+          <img class="profile-picture" src="elgatom.png" />
+          <p class="mutual-friends">3 mutual friends</p>
+        </div>
+        <button class="add-friend-button">Add Friend</button>
+      </div>
+
+      <div class="profile">
+        <img class="elgato-profile" src="gato2.png" alt="profile pic" />
+        <p class="gato-name">Linda</p>
+        <div class="mutual-friends-row">
+          <img class="profile-picture" src="elgatom.png" />
+          <p class="mutual-friends">4 mutual friends</p>
+        </div>
+        <button class="add-friend-button">Add Friend</button>
+      </div>
+    </div>
+  </body>
+</html>

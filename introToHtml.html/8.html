@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Search</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <style>
+      .name-box {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      .email-box {
+        display: block;
+        margin-bottom: 20px;
+      }
+
+      .customer-support {
+        width: 200px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-bottom: 20px;
+      }
+
+      .google-logo {
+        width: 250px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+      }
+
+      .url {
+        padding-left: 15px;
+        padding-right: 155px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        overflow: hidden;
+        width: 350px;
+        text-transform: none;
+        margin-left: 100px;
+        border-radius: 15px;
+        border-width: 1px;
+        border-color: rgb(200, 200, 200);
+        border-style: none;
+        box-shadow: 3px 3px 15px rgba(128, 128, 128, 0.5);
+        margin-bottom: 25px;
+      }
+
+      .firstname-box {
+        display: inline-block;
+        padding: 8px;
+        border-radius: 10px;
+        border-width: 1px;
+        border-color: rgb(156, 156, 156);
+        border-style: solid;
+      }
+
+      .midname-box {
+        display: inline-block;
+        padding: 8px;
+        margin-bottom: 8px;
+        border-radius: 10px;
+        border-width: 1px;
+        border-color: rgb(156, 156, 156);
+        border-style: solid;
+      }
+
+      .email2-box {
+        display: block;
+        padding: 8px;
+        padding-right: 195px;
+        margin-bottom: 8px;
+        border-radius: 10px;
+        border-width: 1px;
+        border-color: rgb(156, 156, 156);
+        border-style: solid;
+      }
+
+      .azul {
+        background-color: rgb(60, 82, 225);
+        opacity: 0.9;
+        color: white;
+        font-weight: bold;
+        border-radius: 10px;
+        padding-left: 160px;
+        padding-right: 160px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: none;
+        cursor: pointer;
+        transition: 0.3s;
+        border-width: 1px;
+        margin-bottom: 25px;
+      }
+
+      .azul:hover {
+        background-color: blue;
+      }
+
+      .uber-title {
+        font-family: Arial;
+        font-size: 25px;
+        font-weight: bold;
+      }
+
+      .enter-location {
+        background-color: rgb(229, 229, 229);
+        display: block;
+        padding: 12px;
+        padding-right: 195px;
+        margin-bottom: 8px;
+        border: none;
+      }
+
+      .enter-destination {
+        display: block;
+        padding: 12px;
+        padding-right: 195px;
+        margin-bottom: 25px;
+        border: none;
+        background-color: rgb(237, 237, 237);
+      }
+
+      .request-button {
+        color: rgb(243, 243, 243);
+        display: inline;
+        padding: 12px;
+        margin-bottom: 25px;
+        margin-right: 15px;
+        border: none;
+        background-color: rgb(0, 0, 0);
+      }
+
+      .schedule-button {
+        color: rgb(0, 0, 0);
+        display: inline;
+        padding: 12px;
+        margin-bottom: 25px;
+        margin-right: 15px;
+        border: none;
+        background-color: rgb(224, 224, 224);
+      }
+
+      .red-box {
+        width: 90px;
+        height: 90px;
+        background-color: red;
+        display: block;
+      }
+
+      .green-circle {
+        width: 90px;
+        height: 90px;
+        border-radius: 45px;
+        background-color: rgb(14, 127, 48);
+        display: block;
+      }
+
+      .box-outside {
+        width: 200px;
+        height: 80px;
+        margin: 0;
+        display: inline-block;
+        padding-top: 8px;
+        padding-bottom: 13px;
+        padding-left: 15px;
+        padding-right: 50px;
+        border: 1px solid rgb(120, 120, 120);
+        margin-bottom: 25px;
+      }
+
+      .installapp-box {
+        color: white;
+        background-color: black;
+        width: 300px;
+        height: 75px;
+        margin: 0;
+        display: inline-block;
+        padding-top: 3px;
+        padding-bottom: 29px;
+        padding-left: 15px;
+        padding-right: 50px;
+        border: 1px solid rgb(120, 120, 120);
+        margin-bottom: 25px;
+      }
+
+      .install-youtube,
+      .youtube-music {
+        font-family: Roboto;
+      }
+
+      .install-youtube {
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .youtube-music {
+        font-size: 13px;
+        color: rgb(201, 201, 201);
+      }
+
+      .elgato {
+        margin: 0;
+        vertical-align: top;
+        margin-top: 15px;
+        margin-left: 10px;
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 35px;
+      }
+
+      .qpasa {
+        margin: 0;
+        border-width: 0.3px;
+        font-size: 14px;
+        vertical-align: top;
+        margin-top: 25px;
+        padding-left: 10px;
+        padding-right: 58px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-color: rgb(200, 200, 200);
+        border-style: none;
+      }
+
+      .qpasa:focus {
+        outline: none;
+      }
+
+      .twee {
+        margin: 0;
+        vertical-align: top;
+        margin-top: 25px;
+        background-color: rgba(75, 75, 249, 0.933);
+        color: white;
+        border-radius: 18px;
+        border: none;
+        padding: 10px;
+        font-weight: bold;
+      }
+
+      .twee:hover {
+        cursor: pointer;
+      }
+
+      .quepasa-gato {
+        margin: 0;
+        margin-left: 15px;
+        width: 410px;
+        height: 85px;
+        display: inline-block;
+        border-radius: 10px;
+        box-shadow: 3px 3px 15px rgba(128, 128, 128, 0.5);
+        margin-bottom: 25px;
+      }
+
+      .facebook-suggestion {
+        display: inline-block;
+        margin: 0;
+        margin-left: 10px;
+        height: 335px;
+        width: 200px;
+        font-family: Roboto;
+        box-shadow: 3px 3px 15px rgba(128, 128, 128, 0.5);
+      }
+
+      .elgato-profile {
+        margin: 0;
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+      }
+
+      .gato-name {
+        font-weight: bold;
+        padding-left: 10px;
+      }
+
+      .mutual-friends {
+        font-size: 14px;
+        color: gray;
+        padding-left: 10px;
+      }
+
+      .add-friend-button {
+        margin-left: 10px;
+        background-color: rgb(63, 95, 221);
+        color: white;
+        border-style: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .add-friend-button:hover {
+        background-color: blue;
+      }
+
+      .add-friend-button:active {
+        opacity: 0.5;
+      }
+
+      .facebook-suggestion2 {
+        display: inline-block;
+        margin: 0;
+        margin-left: 10px;
+        height: 335px;
+        width: 200px;
+        font-family: Roboto;
+        box-shadow: 3px 3px 15px rgba(128, 128, 128, 0.5);
+      }
+
+      .elgato-profile2 {
+        margin: 0;
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+        object-position: right;
+      }
+
+      .gato-name {
+        font-weight: bold;
+        padding-left: 10px;
+      }
+
+      .mutual-friends {
+        font-size: 14px;
+        color: gray;
+        padding-left: 10px;
+      }
+
+      .add-friend-button {
+        margin-left: 10px;
+        background-color: rgb(63, 95, 221);
+        color: white;
+        border-style: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .add-friend-button:hover {
+        background-color: blue;
+      }
+
+      .add-friend-button:active {
+        opacity: 0.5;
+      }
+
+      .facebook-suggestion3 {
+        display: inline-block;
+        margin: 0;
+        margin-left: 10px;
+        height: 335px;
+        width: 200px;
+        font-family: Roboto;
+        box-shadow: 3px 3px 15px rgba(128, 128, 128, 0.5);
+      }
+
+      .elgato-profile3 {
+        margin: 0;
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+      }
+
+      .gato-name {
+        font-weight: bold;
+        padding-left: 10px;
+      }
+
+      .mutual-friends {
+        font-size: 14px;
+        color: gray;
+        padding-left: 10px;
+      }
+
+      .add-friend-button {
+        margin-left: 10px;
+        background-color: rgb(63, 95, 221);
+        color: white;
+        border-style: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .add-friend-button:hover {
+        background-color: blue;
+      }
+
+      .add-friend-button:active {
+        opacity: 0.5;
+      }
+
+      .searchwith-google {
+        display: block;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .google-logo2 {
+        width: 250px;
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+      }
+
+      .searchbox-container {
+        display: flex;
+        justify-content: center;
+      }
+
+      .url2 {
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        padding-left: 15px;
+        padding-right: 155px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 15px;
+        border-width: 1px;
+        border-color: rgb(200, 200, 200);
+        border-style: none;
+        box-shadow: 3px 3px 15px rgba(128, 128, 128, 0.5);
+        margin-bottom: 25px;
+      }
+
+      .googlesearch-button,
+      .feelinglucky-button {
+        display: inline-block;
+        margin-top: 10px;
+        background-color: rgb(224, 224, 224);
+        border-style: none;
+        padding: 10px;
+        margin-right: 5px;
+        margin-bottom: 25px;
+      }
+
+      .underneath-buttons {
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+    <p>8a.</p>
+    <input class="name-box" type="text" placeholder="Name" />
+    <input class="email-box" type="text" placeholder="Email" />
+    <p>8b.</p>
+    <p class="customer-support">
+      Thanks for chatting with our customer support. Would you like to take our
+      quick survey?
+    </p>
+    <button class="button-yes">Yes</button>
+    <button class="button-no">No</button>
+    <p>8c.</p>
+    <img class="google-logo" src="google.png" alt="google logo" />
+
+    <input
+      class="url"
+      type="text"
+      name="google"
+      placeholder="Search Google or type a URL"
+    />
+    <p>8d.</p>
+    <input class="firstname-box" type="text" placeholder="First Name" />
+    <input class="midname-box" type="text" placeholder="Middle Name" />
+    <input class="email2-box" type="text" placeholder="Email" />
+    <button class="azul">Sign Up</button>
+    <p>8e.</p>
+    <p class="uber-title">Request a ride now</p>
+
+    <input
+      class="enter-location"
+      type="text"
+      name="uber"
+      placeholder="Enter pickup location"
+    />
+    <input
+      class="enter-destination"
+      type="text"
+      name="uber"
+      placeholder="Enter destination"
+    />
+
+    <button class="request-button">Request now</button>
+    <button class="schedule-button">Schedule for later</button>
+
+    <p>9a.</p>
+    <div class="red-box"></div>
+    <p>9b.</p>
+    <div class="green-circle"></div>
+    <p>9c.</p>
+
+    <div class="box-outside">
+      <p>Satisfied with our service?</p>
+      <button>Yes</button>
+      <button>No</button>
+    </div>
+    <p>9d.</p>
+
+    <div class="installapp-box">
+      <p class="install-youtube">Install YouTube Music</p>
+      <p class="youtube-music">
+        Add YouTube Music to your desktop for quick and easy access
+      </p>
+    </div>
+
+    <p>9e.</p>
+    <div class="quepasa-gato">
+      <img class="elgato" src="cutecat.jpg" alt="profile pic" />
+      <input class="qpasa" type="text" placeholder="What's happening?" />
+      <button class="twee">Tweet</button>
+    </div>
+    <p>9: f & g.</p>
+    <div class="facebook-suggestion">
+      <img class="elgato-profile" src="cutecat.jpg" alt="profile pic" />
+      <p class="gato-name">Olivia</p>
+      <p class="mutual-friends">2 mutual friends</p>
+      <button class="add-friend-button">Add Friend</button>
+    </div>
+
+    <div class="facebook-suggestion2">
+      <img class="elgato-profile2" src="gato1.png" alt="profile pic 2" />
+      <p class="gato-name">Sebastian</p>
+      <p class="mutual-friends">3 mutual friends</p>
+      <button class="add-friend-button">Add Friend</button>
+    </div>
+
+    <div class="facebook-suggestion3">
+      <img class="elgato-profile3" src="gato2.png" alt="profile pic 3" />
+      <p class="gato-name">Linda</p>
+      <p class="mutual-friends">4 mutual friends</p>
+      <button class="add-friend-button">Add Friend</button>
+    </div>
+
+    <p>9h.</p>
+    <div class="searchwith-google">
+      <div>
+        <img class="google-logo2" src="google.png" alt="google logo" />
+      </div>
+      <div class="searchbox-container">
+        <input
+          class="url2"
+          type="text"
+          name="google"
+          placeholder="Search Google or type a URL"
+        />
+      </div>
+      <div class="underneath-buttons">
+        <button class="googlesearch-button">Google Search</button>
+        <button class="feelinglucky-button">I'm Feeling Lucky</button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+.uber-button {
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  height: 40px;
+  width: 130px;
+
+  margin: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.uber-button:hover {
+  opacity: 0.8;
+}
+
+.uber-button:active {
+  opacity: 0.5;
+}
+
+.amazon-button {
+  background-color: rgb(255, 216, 20);
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 28px;
+  padding-right: 28px;
+  border: none;
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  vertical-align: top;
+}
+.amazon-button:hover {
+  background-color: rgb(246, 195, 26);
+}
+
+.amazon-button:active {
+  opacity: 0.5;
+}
+
+.gitHub-button {
+  background-color: rgb(46, 164, 79);
+  color: white;
+  font-weight: bold;
+  padding: 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.3s;
+  vertical-align: top;
+}
+
+.gitHub-button:hover {
+  box-shadow: -1px 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gitHub-button:active {
+  opacity: 0.5;
+}
+
+.download-button {
+  color: rgb(108, 117, 125);
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 4px;
+  border-width: thin;
+  cursor: pointer;
+  background-color: white;
+  margin: 10px;
+  transition: 0.3s;
+  vertical-align: top;
+}
+
+.download-button:hover {
+  background-color: rgb(108, 117, 125);
+  color: white;
+}
+
+.download-button:active {
+  opacity: 0.5;
+}
+
+.save-button {
+  background-color: white;
+  color: rgb(10, 102, 194);
+  padding: 10px;
+  border-radius: 20px;
+  border-color: rgb(10, 102, 194);
+  border-style: solid;
+  font-weight: bolder;
+  vertical-align: text-top;
+}
+
+.save-button:hover {
+  background-color: rgb(205, 229, 255);
+  color: rgb(10, 102, 194);
+  border-width: 3px;
+}
+
+.save-button:active {
+  opacity: 0.5;
+}

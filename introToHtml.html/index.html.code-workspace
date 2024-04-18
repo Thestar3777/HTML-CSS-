@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../Weekend Nutrition/index.html"
+		},
+		{
+			"path": "../../Weekend Nutrition/css"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5502,
+		"liveServer.settings.multiRootWorkspaceName": "index.html"
+	}
+}

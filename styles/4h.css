@@ -1,0 +1,37 @@
+.thisSteches {
+    background-color: green;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: none;
+    transition: padding-top 0.8s, padding-bottom 0.8s, padding-left 0.8s,
+      padding-right 0.8s;
+    cursor: pointer;
+    margin-right: 8px;
+  }
+  .thisSteches:hover {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
+  .lasSombras {
+    background-color: green;
+    color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    border: none;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+  }
+
+  .lasSombras:active {
+    margin-top: 3px;
+    margin-left: 3px;
+    box-shadow: none;
+  }

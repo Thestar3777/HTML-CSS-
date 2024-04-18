@@ -1,0 +1,75 @@
+.esTextotahoma {
+    font-family: Tahoma;
+    font-weight: bold;
+    font-size: 23px;
+  }
+
+  .esTextoarial {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 23px;
+    margin-right: 400px;
+    line-height: 30px;
+  }
+
+  .cambiaRojo {
+    font-size: 18px;
+    color: red;
+    font-weight: normal;
+    font-style: italic;
+  }
+
+  .miTitle {
+    font-family: Verdana;
+    font-weight: bold;
+  }
+
+  .miSub {
+    font-family: Verdana;
+    font-size: 14px;
+    color: grey;
+    line-height: 0px;
+    margin-bottom: 25px;
+  }
+
+  .laDesc {
+    font-family: Verdana;
+    line-height: 20px;
+    margin-right: 450px;
+    font-size: 14px;
+  }
+
+  .sigueMe {
+    background-color: green;
+    color: white;
+    font-size: 12px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 13px;
+    padding-right: 13px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+
+  .tituLo {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 19px;
+    text-align: center;
+  }
+
+  .laDescript {
+    font-family: Arial;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .masInfo {
+    font-family: Arial;
+    font-size: 14px;
+    text-align: center;
+    color: rgb(0, 0, 255);
+    margin-bottom: 50px;
+  }
